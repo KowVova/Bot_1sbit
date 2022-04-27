@@ -33,8 +33,8 @@ logger.addHandler(handler)
 
 load_dotenv()
 
-MY_CHAT = '926485966'
-DIMA_CHAT = '1960941954'
+MY_CHAT = os.getenv('MY_CHAT')
+DIMA_CHAT = os.getenv('DIMA_CHAT')
 
 secret_token = os.getenv('TOKEN')
 chats = {
